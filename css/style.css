@@ -1,0 +1,100 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.debug{
+  background-color: rgba(0, 255, 21, 0.2);
+  border: 1px solid #000;
+  min-height: 50px;
+}
+
+.container{
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.d-flex{
+  display: flex;
+}
+
+/* HEADER INIZIO */
+.menu{
+  position: relative;
+  top: -600px;
+  height: 600px;
+  width: 230px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+
+.opzioni-brano{
+  height: 85px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.upgrade{
+  position: relative;
+  left: 230px;
+  height: 90px;
+  width: 100%;
+}
+
+.testo-lungo{
+  position: relative;
+  left: 230px;
+  width: 82%;
+  height: 510px;
+  overflow: auto;
+}
+
+
+
+/* HEADER FINE */
+
+
+/* RESPONSIVE INIZIO */
+@media all and (max-width:540px){
+  .menu{
+    width: 50px;
+  }
+
+  .testo-lungo,
+  .upgrade{
+    left: 50px;
+  }
+
+
+
+
+
+
+  .home div span,
+  .playlist{
+    display: none;
+  }
+
+}
+
+
+@media all and (max-width:640px){
+
+}
+
+
+@media all and (max-width:880px){
+
+}
+
+
+@media all and (max-width:1440px){
+
+}
+/* RESPONSIVE FINE */
