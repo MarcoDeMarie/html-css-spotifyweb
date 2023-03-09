@@ -4,6 +4,9 @@
   box-sizing: border-box;
 }
 
+body{
+  font-family: sans-serif;
+}
 
 .debug{
   background-color: rgba(0, 255, 21, 0.2);
@@ -17,12 +20,16 @@
   margin: 0 auto;
 }
 
+
+
+
+
 /* HEADER INIZIO */
 .menu{
   font-size: 14px;
   background-color: #000;
   padding-left: 15px;
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   bottom: 0;
@@ -83,49 +90,65 @@
   margin-right: 10px;
 }
 
+
+
+
 /* .menu-bottom{
+  
   color: rgb(184, 184, 184);
-  margin-top: 20px;
 }
 
 .download{
-  width: 10%;
-  height: 10%;
+  height: 20px;
 }
 
-.utente{
-  width: 10%;
-  height: 10%;
+.download img{
+  width: 20%;
+  height: 20px;
+}
+
+.utente img{
+  width: 25%;
+  height: 25%;
 } */
-
-
-
-
-
 
 
 /* HEADER FINE */
 
 
+
+
+
 /* MAIN INIZIO */
+h2{
+  color: white;
+  margin-top: 30px;
+  margin-left: 15px;
+}
+
+
+
 .upgrade{
   display: flex;
   align-items: center;
+  justify-content: flex-end;
   background-color: #080b12;
   position: fixed;
   z-index: 1;
   top: 0;
   bottom: 0;
+  padding-right: 5px;
   left: 230px;
   height: 90px; 
-  width: 100%;
+  width: calc(100vw - 230px);
 }
 
 .btn-upgrade{
   color: white;
   border: 1px solid white;
-  padding: 10px 5px 10px 5px;
-  border-radius: 10px;
+  font-size: 10px;
+  padding: 10px 30px 10px 30px;
+  border-radius: 20px;
 }
 
 .contenuto{
@@ -135,11 +158,94 @@
   top: 0;
   bottom: 0;
   left: 230px;
-  width: 100%;
+  width: calc(100vw - 230px);
   height: calc(100vh - 85px);
   overflow: auto;
 }
 
+.contenuto div nav{
+  color: rgb(184, 184, 184);
+  
+}
+.contenuto div nav ul{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style: none;
+  margin-top: 10px;
+}
+.contenuto div nav ul li{
+  font-size: 10px;
+  margin-right: 15px;
+}
+
+.sottotitolo{
+  color: grey;
+  font-size: 13px;
+  margin-left: 15px;
+}
+
+
+
+
+/* ROW INIZIO */
+.row{
+  margin: 10px 25px 30px 15px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+
+.card{
+  max-width: 150px;
+  margin-right: 10px;
+}
+
+.card img{
+  margin-top: 15px;
+  width: 150px;
+  height: 150px;
+}
+
+.card p{
+  color: white;
+  text-align: center;
+  font-size: 13px;
+}
+
+.card p span{
+  display: block;
+  color: grey;
+}
+
+
+
+.card-round{
+  max-width: 150px;
+  margin-right: 10px;
+
+}
+
+.card-round img{
+  margin-top: 15px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%
+  
+}
+
+.card-round p{
+  color: white;
+  text-align: center;
+  font-size: 13px;
+}
+
+.card-round p span{
+  display: block;
+  color: grey;
+}
+/* ROW FINE*/
 /* MAIN FINE */
 
 
@@ -149,11 +255,17 @@
   height: 85px;
   width: 100%;
   z-index: 999;
+  
   position: fixed;
   left: 0;
   bottom: 0;
 }
 /* FOOTER FINE */
+
+
+
+
+
 
 
 /* RESPONSIVE INIZIO */
@@ -162,9 +274,10 @@
     width: 50px;
   }
 
-  .testo-lungo,
+  .contenuto,
   .upgrade{
     left: 50px;
+    width: calc(100vw - 50px);
   }
 
   .logo-desktop{
