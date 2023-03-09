@@ -19,6 +19,9 @@
 
 /* HEADER INIZIO */
 .menu{
+  font-size: 14px;
+  background-color: #000;
+  padding-left: 15px;
   position: fixed;
   top: 0;
   left: 0;
@@ -29,27 +32,110 @@
   flex-direction: column;
   justify-content: flex-start;
 }
+.logo-desktop img{
+  margin-top: 15px;
+  width: 65%;
+  height: 65%;
+}
+.logo-mobile{
+  display: none;
+}
+
+.home{
+  color: rgb(184, 184, 184);
+}
+.home img{
+  width: 10%;
+  height: 10%;
+}
+
+.home div{
+  margin-top: 10px;
+}
+
+
+.home div i{
+  font-size: 18px;
+}
+
+
+.home div span{
+  margin: 10px;
+}
+
+.playlist{
+  color: rgb(184, 184, 184);
+  margin-top: 20px;
+}
+
+.playlist ul{
+  list-style: none;
+}
+
+.playlist ul li{
+  margin-top: 10px;
+  
+}
+
+.playlist ul li i{
+  font-size: 40px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+/* .menu-bottom{
+  color: rgb(184, 184, 184);
+  margin-top: 20px;
+}
+
+.download{
+  width: 10%;
+  height: 10%;
+}
+
+.utente{
+  width: 10%;
+  height: 10%;
+} */
+
+
+
+
+
+
 
 /* HEADER FINE */
 
 
 /* MAIN INIZIO */
 .upgrade{
+  display: flex;
+  align-items: center;
+  background-color: #080b12;
   position: fixed;
+  z-index: 1;
   top: 0;
   bottom: 0;
   left: 230px;
-  height: 90px;
+  height: 90px; 
   width: 100%;
 }
 
-.testo-lungo{
+.btn-upgrade{
+  color: white;
+  border: 1px solid white;
+  padding: 10px 5px 10px 5px;
+  border-radius: 10px;
+}
+
+.contenuto{
+  background-color: #141922;
   position: fixed;
   padding-top: 90px;
   top: 0;
   bottom: 0;
   left: 230px;
-  width: 82%;
+  width: 100%;
   height: calc(100vh - 85px);
   overflow: auto;
 }
@@ -59,6 +145,7 @@
 
 /* FOOTER INIZIO */
 .opzioni-brano{
+  background-color: #282828;
   height: 85px;
   width: 100%;
   z-index: 999;
@@ -80,9 +167,19 @@
     left: 50px;
   }
 
+  .logo-desktop{
+    display: none;
+  }
 
+  .logo-mobile{
+    display: block;
+  }
+  
 
-
+  .home img, .logo-mobile img{
+    width: 80%;
+    height: 80%;
+  }
 
 
   .home div span,
